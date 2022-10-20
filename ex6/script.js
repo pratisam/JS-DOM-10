@@ -25,8 +25,8 @@ let pwdInput = document.getElementById('pwd');
 let confirmPwdInput = document.getElementById('pwd-confirm');
 pwdInput.addEventListener('keyup',pwdFunction);
 confirmPwdInput.addEventListener('keyup',pwdCheckFunction);
-let a = document.querySelectorAll('section')[3];
-let b = a.querySelector('p').style
+let a = document.querySelectorAll('section')[3].querySelector('p').style;
+let b = a
 function pwdFunction(){
     let pwdText = pwdInput.value;
     let pwdlength = pwdText.length;
