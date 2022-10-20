@@ -103,27 +103,22 @@ for(let i=0;i<26;i++){
 // })
 
 var list = document.getElementsByTagName('ul')[0],
-    itemsFirst = list.getElementsByTagName('li')[0].innerHTML,
-    itemsLast = list.getElementsByTagName('li')[4].innerHTML;
-let tempItem = itemsFirst;
-    itemsFirst =itemsLast;
-    itemsLast = tempItem;
-list.getElementsByTagName('li')[0].innerHTML = itemsFirst;
-list.getElementsByTagName('li')[4].innerHTML = itemsLast;
-
+    itemsFirst = list.getElementsByTagName('li')[0],
+    itemsLast = list.getElementsByTagName('li')[4];
+// let tempItem = itemsFirst;
+//     itemsFirst =itemsLast;
+//     itemsLast = tempItem;
+// list.getElementsByTagName('li')[0].innerHTML = itemsFirst;
+// list.getElementsByTagName('li')[4].innerHTML = itemsLast;
+itemsLast.appendChild(itemsFirst);
 // Move the <h2> of the third section in the second one and vice-versa
 var sectionBody1 = document.getElementsByTagName('h2')[0];
 var sectionBody2= document.getElementsByTagName('h2')[1];
-var section1H = document.getElementsByTagName('h2')[0].innerHTML;
-var section2H = document.getElementsByTagName('h2')[1].innerHTML;
+var section1H = document.getElementsByTagName('section')[0];
+var section2H = document.getElementsByTagName('section')[1];
 // console.log(section1H,section2H)
-let tempH = section1H;
-section1H = section2H;
-section2H = tempH;
-sectionBody1.innerHTML =section1H;
-sectionBody2.innerHTML =section2H;
-
-
+section1H.appendChild(sectionBody2);
+section2H.appendChild(sectionBody1);
 // Delete the last section from the DOM, we don't need it anyways
 var sectionDelete = document.getElementsByTagName('section')[3]
 sectionDelete.style.display ="none";
