@@ -133,6 +133,7 @@ collection.forEach(element =>{
 
 // Link coding -----------------------------------------------------------------
     linkLnk.setAttribute('href',"Youtube Link");
+    linkLnk.setAttribute('target',"_blank");
     linkLnk.href =element.link;
     linkLnk.innerHTML = `<i class="fa-brands fa-youtube"></i>`;
     console.log(linkLnk.href);
