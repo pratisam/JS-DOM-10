@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container{
+    margin: 100px;
+    margin-top: 50px;
+    
+}
+.head-container{
+    display: flex;
+    align-items: flex-end;
+    color:#121B98;
+}
+.sub-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.movieContainer{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: flex-start;
+}
+.dot {
+    height: 100px;
+    width: 100px;
+    border: 5px solid #121B98;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #121B98;
+   
+}
+.logo{
+    padding-right: 50px;
+}
+.movie-img{
+    width: 280px;
+    height: 150px;
+}
+.imageDiv{
+
+}
+.movie-genrePara{
+    margin: 5px;
+    margin-left: 0;
+}
+.genreDiv{
+    display: flex;
+    margin-bottom: -15px;
+}
+.genreDiv p:first-child {
+    background-color: #FFDD57;
+}
+.genreDiv p:last-child {
+    background-color: #57C3FF;
+}
+.descriptionDiv{
+
+}
+.linkDiv{
+
+}
+.movie-descriptionH3{
+    margin-bottom: -25px;
+
+}
+.movie-descriptionH6{
+    margin-bottom: -15px;
+    font-weight: 100;
+
+}
+.movie-descriptionPara{
+   
+
+}
+.movie-linklnk{
+
+}
