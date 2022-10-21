@@ -134,7 +134,7 @@ collection.forEach(element =>{
 // Link coding -----------------------------------------------------------------
     linkLnk.setAttribute('href',"Youtube Link");
     linkLnk.href =element.link;
-    linkLnk.innerHTML = "youtube Link";
+    linkLnk.innerHTML = `<i class="fa-brands fa-youtube"></i>`;
     console.log(linkLnk.href);
     linkLnk.classList.add('movie-linklnk');
 //append child to div -----------------------------------------------------------

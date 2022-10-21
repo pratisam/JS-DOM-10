@@ -23,7 +23,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid rgb(145, 144, 144);
     justify-content: center;
     align-items: flex-start;
 }
@@ -40,7 +40,7 @@ body{
     padding-right: 50px;
 }
 .movie-img{
-    width: 280px;
+    width: 300px;
     height: 150px;
 }
 .imageDiv{
@@ -82,3 +82,25 @@ body{
 .movie-linklnk{
 
 }
+@media only screen and (max-width: 400px) {
+    body {
+       
+    }
+    .dot {
+        height: 70px;
+        width: 70px;
+        border: 5px solid #121B98;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #121B98;
+       
+    }
+    .main-container{
+        margin: 20px;
+        margin-top: 50px;
+        
+    }
+    .writing p{
+        display: none;
+    }
+  }
