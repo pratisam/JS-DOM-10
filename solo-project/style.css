@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:  100vw;
 }
 .main-container{
     margin: 100px;
@@ -17,16 +18,19 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
 }
 .movieContainer{
     padding-left: 10px;
     margin: 5px;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 17vw;
     border: 1px solid rgb(145, 144, 144);
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
+    height: 420px;
+    max-height: fit-content;
 }
 .dot {
     height: 100px;
@@ -41,7 +45,7 @@ body{
     padding-right: 50px;
 }
 .movie-img{
-    width: 300px;
+    width: 100%;
     height: 150px;
 }
 .imageDiv{
@@ -53,7 +57,7 @@ body{
 }
 .genreDiv{
     display: flex;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
 }
 .genreDiv p:first-child {
     background-color: #FFDD57;
@@ -64,6 +68,13 @@ body{
 .descriptionDiv{
 
 }
+.movie-descriptionPara {
+    font-size: 10px;
+   
+    color: rgb(27, 26, 26);
+
+}
+
 .linkDiv{
     font-size: 40px;
 }
@@ -76,8 +87,9 @@ body{
 
 }
 .movie-descriptionH6{
-    margin-bottom: -15px;
-    font-weight: 100;
+    margin-bottom: -12px;
+    font-weight: 700;
+    color: grey;
 
 }
 .movie-descriptionPara{
@@ -87,9 +99,17 @@ body{
 .movie-linklnk{
 
 }
-@media only screen and (max-width: 400px) {
+/******************************************************************************************************/
+@media only screen and (max-width: 420px) {
     body {
-       
+       width: 100vw;
+    }
+    .head-container{
+        width: 90vw;
+    }
+    .h1{
+        font-size: 25px;
+        margin-left: 0px;
     }
     .dot {
         height: 70px;
@@ -101,11 +121,23 @@ body{
        
     }
     .main-container{
-        margin: 20px;
-        margin-top: 50px;
+        margin: 25px;
+        margin-top: 50px;  
         
     }
     .writing p{
         display: none;
+    }
+    .movieContainer{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        padding-left: 0;
+        height: fit-content;
+    }
+    .movie-img{
+        width: 80vw;
+        height: 150px;
     }
   }
