@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width:  100vw;
+    background-color: #F2F2F2;
 }
 .main-container{
     margin: 100px;
@@ -15,18 +16,19 @@ body{
     color:#121B98;
 }
 .sub-container{
+   
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
 .movieContainer{
-    padding-left: 10px;
-    margin: 5px;
+    background-color: #FFFFFF;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     width: 17vw;
-    border: 1px solid rgb(145, 144, 144);
+    /* border: 1px solid rgb(145, 144, 144); */
     justify-content: space-between;
     align-items: flex-start;
     height: 420px;
@@ -58,6 +60,7 @@ body{
 .genreDiv{
     display: flex;
     margin-bottom: -20px;
+    padding-left: 10px;
 }
 .genreDiv p:first-child {
     background-color: #FFDD57;
@@ -66,6 +69,7 @@ body{
     background-color: #57C3FF;
 }
 .descriptionDiv{
+    padding-left: 10px;
 
 }
 .movie-descriptionPara {
@@ -76,7 +80,11 @@ body{
 }
 
 .linkDiv{
+    width: 90%;
+    margin-left: 10px;
     font-size: 40px;
+    border-top: 1px solid grey;
+    
 }
 .fa-youtube:before {
     content: "\f167";

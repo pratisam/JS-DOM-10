@@ -60,4 +60,5 @@ function logKey(e) {
     deleteList.parentNode.removeChild(deleteList) ;
   }
 }
-
+//                                   "***********"=> afterbegin
+//newSqContainer.insertAdjacentHTML("beforeend",event.target.outerHTML)
